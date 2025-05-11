@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sakali Raghavendra Kumar - Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Simple, clean color palette */
+    :root {
+      --primary: #2c3e50;
+      --accent: #3498db;
+      --light: #eeeef0;
+      --dark: #212529;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --border: #dee2e6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Simple header with minimal styling */
+    header {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+     nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .nav-logo {
+ font-weight: 600;
+ font-size: 1.25rem;
+ color: var(--primary);
+ }
+
+ .nav-menu {
+ display: flex;
+ list-style: none;
+ gap: 1.5rem;
+ }
+
+ .nav-menu li a {
+ color: var(--dark);
+ font-weight: 500;
+ }
+
+ .nav-menu li a.active,
+ .nav-menu li a:hover {
+ color: var(--accent);
+ }
+
+    /* Profile section */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 20px;
+      gap: 2rem;
+      padding: 3rem 0;
+    }
+
+    .profile-sidebar {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .profile-image {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    .profile-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-title h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: var(--primary);
+    }
+
+    .profile-title p {
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    .profile-contact {
+      margin-bottom: 1.5rem;
+    }
+
+    .profile-contact ul {
+      list-style: none;
+    }
+
+    .profile-contact li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .profile-contact li i {
+      width: 20px;
+      color: var(--accent);
+    }
+
+    .profile-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .profile-social a {
+      color: var(--accent);
+      font-size: 1.2rem;
+    }
+
+    .profile-social a:hover {
+      color: var(--accent);
+    }
+
+    .profile-content {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .profile-section {
+      margin-bottom: 2rem;
+    }
+
+    .profile-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio-text {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    /* Education and interests */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .info-card {
+      background-color: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.25rem;
+    }
+
+    .info-card h3 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .info-list {
+      list-style: none;
+    }
+
+    .info-list li {
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .info-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .info-list li i {
+      color: var(--accent);
+      min-width: 20px;
+    }
+
+    .edu-item {
+      margin-bottom: 1rem;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-title {
+      font-weight: 600;
+    }
+
+    .edu-place {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    /* Publications */
+    .publications {
+      background-color: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+
+    .pub-group {
+      margin-bottom: 2rem;
+    }
+
+    .pub-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .pub-group h3 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .pub-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .pub-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .pub-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+    }
+
+    .pub-title i {
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    .pub-authors {
+      color: var(--gray);
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .pub-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    /* Contact section */
+    .contact {
+      text-align: center;
+      padding: 3rem 0;
+      background-color: white;
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-title {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info {
+    margin: 0.5rem 0 0 0; /* No left indent */
+    line-height: 1.5;
+    text-align: left; /* Ensure it's left aligned */
+    }
+
+
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary);
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--light);
+    }
+
+    .footer-links {
+      margin: 0.75rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+      }
+
+      .profile-sidebar {
+        max-width: 100%;
+      }
+    }
+
+    .profile-pic {
+      flex: 1;
+      margin-top: 35px;
+      min-width: 250px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-pic img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 3px solid #00bfff;
+    }
+
+    .resume-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #c7c7c9;
+    color: rgb(227, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    }
+
+    .resume-btn:hover {
+    background-color: #ffffff;
+    }
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.space {
+  margin: 1.5rem 0;
+}
+
+.contact-block {
+  margin-bottom: 1.5rem;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+
+.contact-row i {
+  font-size: 1.2rem;
+  color: #00bfff;
+}
+
+.contact-row h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.contact-info {
+  margin: 0.5rem 0 0 1.8rem; /* indent under the icon */
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #00bfff;
+}
+
+.map {
+  flex: 1;
+  min-width: 100px;
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ .teaching-section {
+ background-color: var(--light);
+ color: var(--dark);
+ }
+
+ .teaching-section .container {
+ max-width: 800px;
+ margin: 0 auto;
+ text-align: left;
+ }
+
+ .section-title {
+ font-size: 1.5rem;
+ font-weight: 700;
+ margin-bottom: 1rem;
+ color: var(--accent); /* #3498db */
+ border-bottom: 1px solid var(--border);
+ padding-bottom: 0.3rem;
+ }
+
+ .teaching-list {
+ list-style: none;
+ margin: 0;
+ font-size: 1rem;
+ line-height: 1.6;
+ color: var(--gray);
+ }
+
+ .teaching-list li {
+ margin-bottom: 0.5rem;
+ }
+
+ .course-title {
+ font-weight: 600;
+ color: var(--primary);
+ }
+    
+  </style>
+</head>
+<body>
+ <!-- Header -->
+ <header>
+ <div class="container">
+ <nav>
+ <div class="nav-logo">Dr. Sakali Raghavendra Kumar</div>
+ <ul class="nav-menu">
+ <li><a href="#" class="active">Home</a></li>
+ <li><a href="#publications">Publications</a></li>
+ <li><a href="#teaching">Teaching</a></li>
+ <li><a href="#contact">Contact</a></li>
+ 
+ </ul>
+ </nav>
+ </div>
+ </header>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <div class="container">
+      <div class="profile">
+        <div class="profile-sidebar">
+          <div class="profile-pic">
+            <img src="C:\Users\raghavendrakumars\Downloads\Portfolio\photo.jpeg" alt="Dr. SRK">
+          </div>
+          <div class="profile-title">
+            <h1>Dr. Sakali Raghavendra Kumar</h1>
+            <p>Assistant Professor</p>
+            <p>Department of Computer Science and Engineering</p>
+          </div>
+          <div class="profile-social">
+            <a href="mailto:raghavendrakumars@ssn.edu.in" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=Ng_1Nk0AAAAJ&hl=en&oi=ao" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/raghavendra-kumar-sakali-790422101/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" title="Resume"><i class="fa-solid fa-file-lines"></i></a>
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <div class="profile-section">
+            <h2 class="section-title">Biography</h2>
+            <p class="bio-text">
+              I am currently a faculty member in the Department of Computer Science and Engineering at <a href="https://www.ssn.edu.in/staff-members/sakali-raghavendra-kumar-assistant-professor/">Sri Sivasubramaniya Nadar College of Engineering</a>.
+              My research interests include reliable and approximate adder and multiplier designs, as well as Machine Learning/Deep Learning accelerators using reconfigurable computing. I am also keen on designing customized hardware solutions using reconfigurable computing for specific applications. 
+            </p>
+            <p class="bio-text">
+              I received my Ph.D. from the 
+              <a href="https://www.iiitdm.ac.in/">Indian Institute of Information Technology, Design and Manufacturing (IIITDM)</a>, 
+              Kancheepuram, Chennai, where I was supervised by 
+              <a href="https://www.iiitdm.ac.in/people/faculty/noor@iiitdm.ac.in">Dr. Noor Mahammad Sk</a> 
+              (Associate Professor, IIITDM Kancheepuram) 
+            </p>
+            <p class="resume-btn">
+              <a href="C:\Users\raghavendrakumars\Downloads\Portfolio\Resume_v1.pdf" style="color: black;">Download Resume</a>
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>Research Interests</h3>
+              <ul class="info-list">
+                <li><i class="fas fa-microchip"></i> Reconfigurable Computing</li>
+                <li><i class="fas fa-tools"></i> Reliable Adder and Multiplier</li>
+                <li><i class="fas fa-balance-scale"></i> Approximate Adder and Multiplier</li>
+                <li><i class="fas fa-brain"></i> AI Model Accelerators</li>
+              </ul>
+            </div>
+          
+            <div class="info-card">
+              <h3>Education</h3>
+              <div class="edu-item">
+                <div class="edu-title">PhD in CSE, 2021–2024</div>
+                <div class="edu-place">IIITDM Kancheepuram, Chennai</div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-title">M. Tech in Computer Science, 2016–2018</div>
+                <div class="edu-place">JNTU, Anantapur</div>
+              </div>
+              <div class="edu-item">
+                <div class="edu-title">B. Tech in Information Technology, 2009–2013</div>
+                <div class="edu-place">G. Pullaiah College of Engineering and Technology, Kurnool </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="publications">
+    <br><br><br>
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      
+      <div class="pub-group">
+        <h3>Journal Articles</h3>     
+        <!-- Publication 1 -->
+        <div class="pub-item">
+          <div class="pub-title">
+            <i class="fas fa-file-alt"></i>
+            Optimized Fault-Tolerant Adder Design Using Error Analysis
+          </div>
+          <div class="pub-authors">
+            Raghavendra Kumar Sakali, P. Balasubramanian, Ramesh Reddy, Sreehari Veeramachaneni, and Noor Mahammad Sk
+          </div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1142/S0218126623500913" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="pub-item">
+          <div class="pub-title">
+            <i class="fas fa-file-alt"></i>
+            Intrinsic Based Self- Healing Adder Design Using Chromosome Reconstruction Algorithm
+          </div>
+          <div class="pub-authors">
+            Sakali Raghavendra Kumar, Noor Mahammad Sk.
+          </div>
+          <div class="pub-links">
+            <a href="https://link.springer.com/article/10.1007/s10836-023-06050-1" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication 3 -->
+        <div class="pub-item">
+          <div class="pub-title">
+            <i class="fas fa-file-alt"></i>
+            Preferential Fault-Tolerance Multiplier Design to Mitigate Soft Errors in FPGAs
+          </div>
+          <div class="pub-authors">
+            Raghavendra Kumar Sakali, Sreehari Veeramachaneni, Noor Mahammad SK
+          </div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.vlsi.2023.102068" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Publication 4 -->
+        <div class="pub-item">
+          <div class="pub-title">
+            <i class="fas fa-file-alt"></i>
+            Fault-tolerant multiplier using self-healing technique
+          </div>
+          <div class="pub-authors">
+            Raghavendra Kumar Sakali, Noor Mahammad Sk
+          </div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.microrel.2024.115458" class="pub-link">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <h3><u>List of Conferences</u></h3>
+        <br>
+          <!-- Conference Publication 1 -->
+          <div class="pub-item">
+            <div class="pub-title">
+              <i class="fas fa-file-alt"></i>
+              Novel Embryonic Adder Architecture with Uni-Cellular Self Check Unit
+            </div>
+            <div class="pub-authors">
+              Sakali Raghavendra Kumar, Noor Mahammad Sk, Balasubramanian P, G. Venkat Reddy
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.2991/978-94-6463-252-1_93" class="pub-link" target="_blank">
+                <i class="fas fa-file-pdf"></i> PDF
+              </a>
+            </div>
+          </div>
+        
+          <!-- Conference Publication 2 -->
+          <div class="pub-item">
+            <div class="pub-title">
+              <i class="fas fa-file-alt"></i>
+              Fault-Tolerant Floating-Point Multiplier Design for Mission Critical Systems
+            </div>
+            <div class="pub-authors">
+              Sakali Raghavendra Kumar, Sreehari Veeramachaneni, Sk Noor Mahammad 
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/VLSID60093.2024.00120" class="pub-link" target="_blank">
+                <i class="fas fa-file-pdf"></i> PDF
+              </a>
+            </div>
+          </div>
+        
+          <!-- Conference Publication 3 -->
+          <div class="pub-item">
+            <div class="pub-title">
+              <i class="fas fa-file-alt"></i>
+              Fault Resilient Micro-Coded Control Unit for Space-Based Digital Systems
+            </div>
+            <div class="pub-authors">
+              S. Deepanjali, Noor Mahammad Sk and Sakali Raghavendra Kumar
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/VDAT63601.2024.10705726" class="pub-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> PDF
+              </a>
+            </div>
+          </div>
+
+
+           <!-- Conference Publication 4 -->
+           <div class="pub-item">
+            <div class="pub-title">
+              <i class="fas fa-file-alt"></i>
+              Preferential Fault-Tolerant Based TF32 Floating Point Adder for Mission Critical Systems
+            </div>
+            <div class="pub-authors">
+              S. Raghavendra Kumar and Sk. Noor Mahammad
+            </div>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1109/ATS64447.2024.10915484" class="pub-link" target="_blank">
+                <i class="fas fa-external-link-alt"></i> PDF
+              </a>
+            </div>
+          </div>
+        
+    </div>
+    <section class="teaching" id="teaching">
+        <br><br><br>
+     <h2 class="section-title" style="margin-left: 45px;">Teaching</h2>
+    <ul class="teaching-list" style="margin-left: 45px;">
+    <li><span class="course-title">Data Structures</span> </li>
+    <li><span class="course-title">Data Structures Lab</span> </li>
+    <li><span class="course-title">Python Programming</span> </li>
+    <li><span class="course-title">Python Programming Lab</span> </li>
+    <li><span class="course-title">Computer Organization and Architecture</span> </li>
+    <li><span class="course-title">Internet Programming</span></li>
+    <li><span class="course-title">Internet Programming Lab</span> </li>
+    <li><span class="course-title">Digital Principles and System Design</span> </li>
+    <li><span class="course-title">Digital Design Lab</span></li>
+    </ul>
+    </section>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-content">
+
+      <!-- Left: Title + Contact Info -->
+      <div class="contact-left">
+        <!-- Row 1 -->
+        <h2 class="contact-title">Get in Touch</h2>
+
+        <!-- Space -->
+        <div class="space"></div>
+
+        <!-- Row 2 + 3 -->
+        <div class="contact-block">
+          <div class="contact-row">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+          </div>
+          <p class="contact-info">
+            <a href="mailto:raghavendrakumars@ssn.edu.in">raghavendrakumars@ssn.edu.in</a>
+          </p>
+        </div>
+
+        <!-- Space -->
+        <div class="space"></div>
+
+        <!-- Row 4 + 5 + 6 -->
+        <div class="contact-block">
+          <div class="contact-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Address</h4>
+          </div>
+          <p class="contact-info">
+            SSN College of Engineering,<br>
+            Kalavakkam, OMR, Chennai, India
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Google Maps -->
+      <div class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.412168481091!2d80.20075717447003!3d12.751723587543818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52512f04729e11%3A0xbc4ea0ae50ca1aaa!2sSri%20Sivasubramaniya%20Nadar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1746791856818!5m2!1sen!2sin" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Dr. Sakali Raghavendra Kumar. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY NC ND 4.0</a></p>
+      <div class="footer-links">
+        <i class="fab fa-creative-commons"></i>
+        <i class="fab fa-creative-commons-by"></i>
+        <i class="fab fa-creative-commons-nc"></i>
+        <i class="fab fa-creative-commons-nd"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
