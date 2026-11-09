@@ -3,856 +3,1882 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Sakali Raghavendra Kumar - Profile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Simple, clean color palette */
+  <meta name="description" content="Academic profile of Dr. Sakali Raghavendra Kumar, Assistant Professor in Computer Science and Engineering.">
+  <title>Dr. Sakali Raghavendra Kumar | Academic Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>  
+/* Footer */
+.site-footer {
+    background: #29263D;
+    color: #D1D5DB;
+    padding: 25px 15px;
+    text-align: center;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Copyright text */
+.site-footer .copyright {
+    margin: 0 0 15px;
+    line-height: 1.7;
+    color: #D1D5DB;
+}
+
+.site-footer .copyright a {
+    color: #E6BC8C;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.site-footer .copyright a:hover {
+    color: #FFFFFF;
+}
+
+/* Creative Commons icons */
+.license-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.license-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #D1D5DB;
+    text-decoration: none;
+}
+
+.license-icons i {
+    font-size: 23px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.license-icons a:hover i {
+    color: #E6BC8C;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 22px 12px;
+        font-size: 13px;
+    }
+
+    .license-icons i {
+        font-size: 21px;
+    }
+}
+
     :root {
-      --primary: #2c3e50;
-      --accent: #3498db;
-      --light: #eeeef0;
-      --dark: #212529;
-      --gray: #6c757d;
-      --light-gray: #e9ecef;
-      --border: #dee2e6;
+      --navy: #172B3A;
+      --blue: #356B78;
+      --blue-light: #E8F0F0;
+      --cyan: #5B9691;
+      --ink: #263642;
+      --muted: #687782;
+      --surface: #FFFFFF;
+      --page: #F4F6F5;
+      --line: #E1E7E5;
+      --shadow: 0 12px 35px rgba(23, 43, 58, .07);
+      --radius: 16px;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
     body {
-      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.5;
-      color: var(--dark);
-      background-color: var(--light);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.7;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { color: var(--cyan); }
+    .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+    /* Navigation */
+    .site-header {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 72px; display: flex; align-items: center;
+      justify-content: space-between; gap: 24px;
+    }
+    .brand { color: var(--navy); font-weight: 800; letter-spacing: -.4px; }
+    .nav-links { display: flex; align-items: center; gap: 25px; list-style: none; }
+    .nav-links a { color: var(--ink); font-size: .91rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--blue); }
+    .menu-toggle {
+      display: none; border: 0; background: transparent; color: var(--navy);
+      font-size: 1.35rem; cursor: pointer;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    /* Hero */
+    .hero {
+      background: linear-gradient(125deg, #172B3A 0%, #244B58 62%, #356B78 100%);
+      color: white; padding: 76px 0 70px; overflow: hidden;
     }
-
-    a:hover {
-      text-decoration: underline;
+    .hero-grid {
+      display: grid; grid-template-columns: 270px 1fr;
+      align-items: center; gap: 58px;
     }
-
-    .container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 0 1rem;
+    .portrait-wrap { display: flex; justify-content: center; }
+    .portrait {
+      width: 235px; height: 235px; border-radius: 50%;
+      object-fit: cover; object-position: center 20%;
+      border: 6px solid rgba(255,255,255,.85);
+      box-shadow: 0 15px 40px rgba(0,0,0,.22);
+      background: #E2E9E7;
     }
-
-    /* Simple header with minimal styling */
-    header {
-      background-color: rgb(255, 255, 255);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    .eyebrow {
+      color: #B9D5D0; text-transform: uppercase; letter-spacing: 2px;
+      font-size: .78rem; font-weight: 700; margin-bottom: 12px;
     }
-
-     nav {
- display: flex;
- justify-content: space-between;
- align-items: center;
- }
-
- .nav-logo {
- font-weight: 600;
- font-size: 1.25rem;
- color: var(--primary);
- }
-
- .nav-menu {
- display: flex;
- list-style: none;
- gap: 1.5rem;
- }
-
- .nav-menu li a {
- color: var(--dark);
- font-weight: 500;
- }
-
- .nav-menu li a.active,
- .nav-menu li a:hover {
- color: var(--accent);
- }
-
-    /* Profile section */
-    .profile {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: 20px;
-      gap: 2rem;
-      padding: 3rem 0;
+    .hero h1 { font-size: clamp(2rem, 4vw, 3.15rem); line-height: 1.15; letter-spacing: -1.3px; }
+    .hero-role { font-size: 1.12rem; color: #E4ECEB; margin-top: 13px; }
+    .hero-affiliation { color: #C6D2D4; margin-top: 4px; }
+    .hero-summary { max-width: 720px; margin-top: 20px; color: #EDF2F1; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 11px 18px; border-radius: 8px; font-weight: 700;
+      font-size: .9rem; transition: .2s ease;
     }
+    .btn-primary { background: white; color: var(--navy); }
+    .btn-primary:hover { background: #E8F0F0; color: var(--navy); transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.65); color: white; }
+    .btn-outline:hover { background: rgba(255,255,255,.10); color: white; }
+    .social-links { display: flex; gap: 17px; margin-top: 25px; }
+    .social-links a { color: white; font-size: 1.2rem; }
+    .social-links a:hover { color: #B9D5D0; }
 
-    .profile-sidebar {
-      flex: 1;
-      min-width: 250px;
+    /* Common sections */
+    section.content-section { padding: 68px 0; }
+    .section-heading { margin-bottom: 28px; }
+    .section-kicker {
+      color: var(--blue); text-transform: uppercase; letter-spacing: 1.7px;
+      font-size: .73rem; font-weight: 800; margin-bottom: 6px;
     }
+    .section-heading h2 { color: var(--navy); font-size: clamp(1.65rem, 3vw, 2.1rem); letter-spacing: -.7px; }
+    .section-heading p { color: var(--muted); max-width: 760px; margin-top: 8px; }
+    .panel {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); box-shadow: var(--shadow);
+    }
+    .about-panel { padding: 28px 30px; }
+    .about-panel p + p { margin-top: 14px; }
+    .about-panel p { color: #46596b; }
+    .about-panel a { font-weight: 600; }
 
-    .profile-image {
-      text-align: center;
-      margin-bottom: 1.5rem;
+    .two-column {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 24px;
     }
+    .info-card { padding: 25px; }
+    .card-title {
+      color: var(--navy); font-size: 1.08rem; margin-bottom: 17px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .card-title i { color: var(--blue); }
+    .interest-list { list-style: none; display: grid; gap: 12px; }
+    .interest-list li { display: flex; gap: 11px; color: #4a5d70; }
+    .interest-list i { color: var(--cyan); margin-top: 5px; }
+    .education-item { padding: 0 0 15px; margin-bottom: 15px; border-bottom: 1px solid var(--line); }
+    .education-item:last-child { border: 0; padding-bottom: 0; margin-bottom: 0; }
+    .education-item strong { display: block; color: var(--ink); }
+    .education-item span { color: var(--muted); font-size: .91rem; }
 
-    .profile-image img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid var(--border);
+    /* Experience timeline */
+    .experience-list { position: relative; margin-left: 8px; }
+    .experience-list::before {
+      content: ""; position: absolute; left: 8px; top: 8px; bottom: 10px;
+      width: 2px; background: #C9D9D6;
     }
-
-    .profile-title {
-      text-align: center;
-      margin-bottom: 30px;
+    .experience-item { position: relative; padding: 0 0 27px 38px; }
+    .experience-item:last-child { padding-bottom: 0; }
+    .experience-item::before {
+      content: ""; position: absolute; left: 1px; top: 7px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--blue); border: 3px solid #DCE9E6;
+      box-shadow: 0 0 0 2px white;
     }
-
-    .profile-title h1 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 0.25rem;
-      color: var(--primary);
+    .experience-card { padding: 21px 24px; }
+    .experience-top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .experience-top h3 { color: var(--navy); font-size: 1.05rem; }
+    .experience-date {
+      color: var(--blue); background: var(--blue-light);
+      padding: 4px 10px; border-radius: 20px; font-size: .8rem; font-weight: 700;
+      white-space: nowrap; align-self: flex-start;
     }
-
-    .profile-title p {
-      color: var(--gray);
-      font-size: 1rem;
-    }
-
-    .profile-contact {
-      margin-bottom: 1.5rem;
-    }
-
-    .profile-contact ul {
-      list-style: none;
-    }
-
-    .profile-contact li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .profile-contact li i {
-      width: 20px;
-      color: var(--accent);
-    }
-
-    .profile-social {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .profile-social a {
-      color: var(--accent);
-      font-size: 1.2rem;
-    }
-
-    .profile-social a:hover {
-      color: var(--accent);
-    }
-
-    .profile-content {
-      flex: 2;
-      min-width: 300px;
-    }
-
-    .profile-section {
-      margin-bottom: 2rem;
-    }
-
-    .profile-section:last-child {
-      margin-bottom: 0;
-    }
-
-    .section-title {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .bio-text {
-      margin-bottom: 1rem;
-      text-align: justify;
-    }
-
-    /* Education and interests */
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .info-card {
-      background-color: white;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 1.25rem;
-    }
-
-    .info-card h3 {
-      font-size: 1.1rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--light-gray);
-    }
-
-    .info-list {
-      list-style: none;
-    }
-
-    .info-list li {
-      margin-bottom: 1rem;
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .info-list li:last-child {
-      margin-bottom: 0;
-    }
-
-    .info-list li i {
-      color: var(--accent);
-      min-width: 20px;
-    }
-
-    .edu-item {
-      margin-bottom: 1rem;
-    }
-
-    .edu-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .edu-title {
-      font-weight: 600;
-    }
-
-    .edu-place {
-      color: var(--gray);
-      font-size: 0.9rem;
-    }
+    .experience-place { color: var(--muted); margin-top: 3px; font-size: .93rem; }
+    .experience-note { color: #536679; margin-top: 9px; font-size: .92rem; }
 
     /* Publications */
-    .publications {
-      background-color: white;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 2rem;
-      margin: 3rem 0;
+    .publication-group { margin-top: 30px; }
+    .publication-group h3 { color: var(--navy); font-size: 1.15rem; margin-bottom: 14px; }
+    .publication {
+      padding: 20px 23px; margin-bottom: 13px;
+      border: 1px solid var(--line); border-radius: 12px; background: white;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .publication:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .publication h4 { color: var(--ink); font-size: .98rem; line-height: 1.5; }
+    .authors { color: var(--muted); font-size: .87rem; margin-top: 6px; }
+    .publication-link { display: inline-flex; gap: 7px; align-items: center; margin-top: 9px; font-size: .87rem; font-weight: 700; }
+
+    /* Teaching */
+    .teaching-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .teaching-card { padding: 25px; }
+    .teaching-card ul { list-style: none; display: grid; gap: 11px; }
+    .teaching-card li { display: flex; gap: 10px; color: #4a5d70; }
+    .teaching-card li i { color: var(--cyan); margin-top: 5px; }
+
+    /* Contact */
+    .contact-section { background: #EEF2F1; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 25px; }
+    .contact-card { padding: 28px; }
+    .contact-row { display: flex; gap: 13px; margin: 18px 0; align-items: flex-start; }
+    .contact-row i { color: var(--blue); font-size: 1.1rem; width: 22px; margin-top: 4px; }
+    .contact-row strong { display: block; color: var(--navy); }
+    .contact-row span, .contact-row a { color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
+    .map-frame { width: 100%; height: 310px; border: 0; border-radius: 12px; }
+    footer { background: var(--navy); color: #d9e7f1; padding: 24px 0; text-align: center; font-size: .85rem; }
+    footer a { color: white; text-decoration: underline; }
+
+    @media (max-width: 800px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 28px; }
+      .hero-summary { margin-left: auto; margin-right: auto; }
+      .hero-actions, .social-links { justify-content: center; }
+      .two-column, .teaching-grid, .contact-grid { grid-template-columns: 1fr; }
+      .nav-links { gap: 15px; }
+    }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 30px, 1120px); }
+      .nav { min-height: 64px; }
+      .brand { font-size: .92rem; }
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: none; position: absolute; top: 64px; left: 0; right: 0;
+        background: white; padding: 18px 25px 22px; border-bottom: 1px solid var(--line);
+        flex-direction: column; align-items: flex-start; gap: 15px;
+      }
+      .nav-links.open { display: flex; }
+      .hero { padding: 52px 0; }
+      .portrait { width: 190px; height: 190px; }
+      section.content-section { padding: 50px 0; }
+      .about-panel, .info-card, .contact-card { padding: 21px; }
+      .experience-card { padding: 18px; }
+    }
+  
+    /* Visual refinement: typography, spacing, colour and responsive polish.
+       All page content and functionality above/below this stylesheet are retained. */
+    :root {
+      --navy: #142B3B;
+      --blue: #315F70;
+      --blue-light: #EAF1F3;
+      --cyan: #6B9C96;
+      --ink: #263744;
+      --muted: #667783;
+      --surface: #FFFFFF;
+      --page: #F5F7F8;
+      --line: #E2E8EC;
+      --shadow: 0 10px 30px rgba(20, 43, 59, .065);
+      --radius: 16px;
     }
 
-    .pub-group {
-      margin-bottom: 2rem;
+    html { scroll-padding-top: 92px; }
+    body {
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: .005em;
+      color: var(--ink);
+      background: var(--page);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
+    a { transition: color .2s ease, background-color .2s ease; }
+    .container { width: min(1160px, calc(100% - 48px)); }
 
-    .pub-group:last-child {
-      margin-bottom: 0;
+    /* Navigation */
+    .site-header {
+      background: rgba(255,255,255,.97);
+      box-shadow: 0 3px 16px rgba(20,43,59,.045);
     }
-
-    .pub-group h3 {
-      font-size: 1.2rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--light-gray);
-    }
-
-    .pub-item {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--light-gray);
-    }
-
-    .pub-item:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-
-    .pub-title {
+    .nav { min-height: 76px; }
+    .brand { font-size: 1.02rem; letter-spacing: -.35px; }
+    .nav-links { gap: 28px; }
+    .nav-links a {
+      font-size: .94rem;
       font-weight: 600;
-      margin-bottom: 0.5rem;
+      color: #344957;
+    }
+    .nav-links a:hover { color: var(--cyan); }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(120deg, #142B3B 0%, #244858 58%, #356B78 100%);
+      padding: 88px 0 82px;
+    }
+    .hero-grid { grid-template-columns: 280px 1fr; gap: 64px; }
+    .portrait {
+      width: 242px;
+      height: 242px;
+      border: 6px solid rgba(255,255,255,.92);
+      box-shadow: 0 18px 44px rgba(0,0,0,.23);
+    }
+    .eyebrow {
+      font-size: .8rem;
+      letter-spacing: 2.2px;
+      color: #C3DDD8;
+    }
+    .hero h1 {
+      font-size: clamp(2.25rem, 4.2vw, 3.45rem);
+      line-height: 1.16;
+      letter-spacing: -1.35px;
+      font-weight: 800;
+    }
+    .hero-role {
+      font-size: 1.22rem;
+      line-height: 1.5;
+      font-weight: 600;
+      color: #F0F4F4;
+    }
+    .hero-affiliation {
+      font-size: 1.02rem;
+      color: #D0DDDF;
+    }
+    .hero-summary {
+      font-size: 1.06rem;
+      line-height: 1.8;
+      max-width: 740px;
+    }
+    .btn {
+      padding: 12px 20px;
+      border-radius: 9px;
+      font-size: .94rem;
+      letter-spacing: .01em;
+    }
+    .btn-primary { box-shadow: 0 5px 14px rgba(0,0,0,.12); }
+    .social-links { gap: 20px; }
+    .social-links a { font-size: 1.28rem; }
+
+    /* Section heading hierarchy */
+    section.content-section { padding: 78px 0; }
+    .section-heading { margin-bottom: 34px; }
+    .section-kicker {
+      font-size: .76rem;
+      letter-spacing: 1.9px;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: clamp(1.9rem, 3vw, 2.35rem);
+      line-height: 1.25;
+      letter-spacing: -.75px;
+      font-weight: 800;
+    }
+    .section-heading p {
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      margin-top: 10px;
+    }
+    .panel {
+      border: 1px solid #E1E8EB;
+      border-radius: 17px;
+      box-shadow: var(--shadow);
+    }
+    .about-panel { padding: 32px 36px; }
+    .about-panel p {
+      color: #435664;
+      font-size: 1.02rem;
+      line-height: 1.9;
+    }
+    .about-panel a { font-weight: 650; }
+
+    /* Research and education cards */
+    .two-column { gap: 26px; margin-top: 28px; }
+    .info-card { padding: 29px; }
+    .card-title {
+      color: var(--navy);
+      font-size: 1.2rem;
+      font-weight: 750;
+      line-height: 1.35;
+      margin-bottom: 20px;
+    }
+    .card-title i { color: var(--blue); }
+    .interest-list { gap: 14px; }
+    .interest-list li {
+      color: #465B69;
+      font-size: 1rem;
+      line-height: 1.6;
+      gap: 12px;
+    }
+    .interest-list i { color: var(--cyan); }
+    .education-item { padding-bottom: 17px; margin-bottom: 17px; }
+    .education-item strong {
+      color: #2D414E;
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .education-item span { font-size: .96rem; line-height: 1.6; }
+
+    /* Experience timeline */
+    .experience-list::before { background: #C8DAD8; width: 2px; }
+    .experience-item { padding-bottom: 30px; }
+    .experience-card { padding: 24px 28px; }
+    .experience-top h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 750;
+    }
+    .experience-date {
+      color: #285969;
+      background: #E8F1F1;
+      border: 1px solid #D5E5E2;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+    .experience-place {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 5px;
+    }
+    .experience-note {
+      color: #536875;
+      font-size: .98rem;
+      line-height: 1.65;
+      margin-top: 11px;
+    }
+
+    /* Publication hierarchy and metadata */
+    .publication-group { margin-top: 38px; }
+    .publication-group h3 {
+      color: var(--navy);
+      font-size: 1.42rem;
+      line-height: 1.35;
+      font-weight: 800;
+      margin-bottom: 18px;
+      padding-left: 14px;
+      border-left: 4px solid var(--cyan);
+    }
+    .publication {
+      padding: 24px 27px;
+      margin-bottom: 16px;
+      border: 1px solid #E1E8EB;
+      border-radius: 14px;
+      background: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(20,43,59,.035);
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .publication:hover {
+      transform: translateY(-3px);
+      border-color: #C8DAD8;
+      box-shadow: 0 12px 28px rgba(20,43,59,.085);
+    }
+    .publication h4 {
+      color: #203746;
+      font-size: 1.08rem;
+      line-height: 1.58;
+      font-weight: 750;
+    }
+    .authors {
+      color: #687985;
+      font-size: .95rem;
+      line-height: 1.65;
+      margin-top: 8px;
+    }
+    .publication-venue {
+      color: #405866;
+      font-size: .97rem;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .publication-meta {
       display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px;
+      margin-top: 12px;
     }
-
-    .pub-title i {
-      color: var(--accent);
-      font-size: 0.9rem;
-    }
-
-    .pub-authors {
-      color: var(--gray);
-      font-size: 0.9rem;
-      margin-bottom: 0.75rem;
-      font-style: italic;
-    }
-
-    .pub-links {
-      display: flex;
-      gap: 1rem;
-      margin-top: 0.75rem;
-    }
-
-    .pub-link {
+    .publication-tag {
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
-      font-size: 0.9rem;
+      gap: 7px;
+      padding: 5px 11px;
+      border-radius: 7px;
+      background: #F0F4F5;
+      color: #3B5664;
+      border: 1px solid #E2E9EB;
+      font-size: .87rem;
+      line-height: 1.5;
+      font-weight: 650;
     }
-
-    /* Contact section */
-    .contact {
-      text-align: center;
-      padding: 3rem 0;
-      background-color: white;
-      border-top: 1px solid var(--border);
+    .publication-tag.quartile {
+      color: #285B57;
+      background: #EAF3F0;
+      border-color: #D7E8E2;
     }
-
-    .contact-title {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-info {
-    margin: 0.5rem 0 0 0; /* No left indent */
-    line-height: 1.5;
-    text-align: left; /* Ensure it's left aligned */
-    }
-
-
-    .contact-item {
-      display: flex;
-      flex-direction: column;
+    .publication-link {
+      display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 8px;
+      margin-top: 13px;
+      font-size: .94rem;
+      font-weight: 750;
+      color: #315F70;
+    }
+    .publication-link:hover { color: #4D8983; }
+    .scholar-link {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 9px;
+      margin-top: 13px;
+      padding: 10px 15px;
+      border: 1px solid #D6E3E5;
+      border-radius: 9px;
+      background: #FFFFFF;
+      color: #315F70;
+      font-size: .94rem;
+      font-weight: 700;
+      box-shadow: 0 3px 10px rgba(20,43,59,.04);
+    }
+    .scholar-link:hover {
+      background: #EDF4F4;
+      color: var(--navy);
     }
 
-    .contact-item i {
-      font-size: 1.5rem;
-      color: var(--accent);
+    /* Teaching */
+    .teaching-grid { gap: 26px; }
+    .teaching-card { padding: 29px; }
+    .teaching-card ul { gap: 14px; }
+    .teaching-card li {
+      color: #465B69;
+      font-size: 1rem;
+      line-height: 1.6;
+      gap: 12px;
     }
+    .teaching-card li i { color: var(--cyan); }
 
-    /* Footer */
+    /* Contact and footer */
+    .contact-section { background: #EDF2F3; }
+    .contact-grid { gap: 28px; }
+    .contact-card { padding: 30px; }
+    .contact-row { gap: 15px; margin: 20px 0; }
+    .contact-row i { color: var(--blue); font-size: 1.15rem; }
+    .contact-row strong {
+      color: var(--navy);
+      font-size: .98rem;
+      margin-bottom: 3px;
+    }
+    .contact-row span, .contact-row a {
+      color: #647783;
+      font-size: .98rem;
+      line-height: 1.65;
+    }
+    .map-frame { min-height: 310px; }
     footer {
-      background-color: var(--primary);
-      color: white;
-      padding: 1.5rem 0;
-      text-align: center;
-      font-size: 0.9rem;
+      background: #142B3B;
+      color: #DCE7EA;
+      padding: 27px 0;
+      font-size: .94rem;
     }
 
-    footer a {
-      color: var(--light);
+    /* Responsive refinements */
+    @media (max-width: 800px) {
+      .hero { padding: 68px 0 62px; }
+      .hero-grid { gap: 34px; }
+      section.content-section { padding: 62px 0; }
+      .two-column, .teaching-grid, .contact-grid { gap: 20px; }
+    }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 32px, 1160px); }
+      .nav { min-height: 66px; }
+      .brand { font-size: .9rem; }
+      .nav-links { padding: 18px 24px 22px; }
+      .hero { padding: 52px 0 48px; }
+      .portrait { width: 188px; height: 188px; }
+      .hero h1 { font-size: clamp(1.9rem, 8vw, 2.45rem); }
+      .hero-role { font-size: 1.1rem; }
+      .hero-summary { font-size: 1rem; }
+      section.content-section { padding: 52px 0; }
+      .section-heading { margin-bottom: 26px; }
+      .section-heading h2 { font-size: 1.85rem; }
+      .about-panel, .info-card, .contact-card, .teaching-card { padding: 22px; }
+      .experience-card { padding: 19px 20px; }
+      .publication { padding: 20px; }
+      .publication h4 { font-size: 1.02rem; }
+      .publication-group h3 { font-size: 1.25rem; }
+      .contact-grid { grid-template-columns: 1fr; }
     }
 
-    .footer-links {
-      margin: 0.75rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-    }
+  
 
-    @media (max-width: 768px) {
-      .profile {
-        flex-direction: column;
-      }
+/* =========================================================
+   ROYAL BLUE + SILVER PROFESSIONAL THEME
+   Visual styling only: page content, links, images and JS
+   are retained from the supplied HTML.
+   ========================================================= */
 
-      .profile-sidebar {
-        max-width: 100%;
-      }
-    }
+:root {
+  --navy: #102B59;
+  --blue: #174A91;
+  --blue-light: #EAF0F8;
+  --cyan: #8FA9C9;
+  --ink: #263449;
+  --muted: #68778B;
+  --surface: #FFFFFF;
+  --page: #F3F5F8;
+  --line: #DCE3EC;
+  --shadow: 0 12px 32px rgba(16, 43, 89, .075);
+  --radius: 18px;
 
-    .profile-pic {
-      flex: 1;
-      margin-top: 35px;
-      min-width: 250px;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+  --royal: #123B78;
+  --royal-deep: #0B2550;
+  --silver: #DCE2EA;
+  --silver-bright: #F4F6F9;
+  --silver-mid: #AEBBCB;
+  --accent: #91ACD0;
+}
 
-    .profile-pic img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 20%;
-    border: 3px solid #00bfff;
-    }
+/* Base typography */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
 
-    .resume-btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #c7c7c9;
-    color: rgb(227, 0, 0);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    }
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: .005em;
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, #F7F9FC 0%, #F0F3F7 100%);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-    .resume-btn:hover {
-    background-color: #ffffff;
-    }
+p, li {
+  font-size: 1rem;
+}
 
-.contact-content {
+a {
+  color: var(--blue);
+  transition: color .22s ease, background-color .22s ease,
+              border-color .22s ease, transform .22s ease;
+}
+
+a:hover {
+  color: #5278AD;
+}
+
+.container {
+  width: min(1160px, calc(100% - 48px));
+}
+
+/* Navigation bar */
+.site-header {
+  background: rgba(11, 37, 80, .97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(220, 226, 234, .24);
+  box-shadow: 0 5px 22px rgba(7, 25, 55, .16);
+}
+
+.nav {
+  min-height: 78px;
+}
+
+.brand {
+  color: var(--silver-bright);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -.35px;
+}
+
+.brand:hover {
+  color: #FFFFFF;
+}
+
+.nav-links {
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--silver);
+  font-size: .96rem;
+  font-weight: 650;
+  letter-spacing: .01em;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0;
+  height: 2px;
+  background: #BFCDE0;
+  border-radius: 2px;
+  transition: width .22s ease;
+}
+
+.nav-links a:hover {
+  color: #FFFFFF;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  color: var(--silver-bright);
+}
+
+/* Hero / profile banner */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #FFFFFF;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(173, 194, 222, .19), transparent 26%),
+    radial-gradient(circle at 8% 92%, rgba(107, 145, 198, .18), transparent 30%),
+    linear-gradient(128deg, #0B2550 0%, #123B78 52%, #24558F 100%);
+  padding: 88px 0 84px;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(220, 230, 243, .13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero::before {
+  width: 440px;
+  height: 440px;
+  right: -160px;
+  top: -250px;
+}
+
+.hero::after {
+  width: 310px;
+  height: 310px;
+  right: -95px;
+  top: -185px;
+}
+
+.hero-grid {
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+}
+
+.portrait {
+  width: 248px;
+  height: 248px;
+  border: 7px solid #E7ECF3;
+  background: #DCE3EC;
+  box-shadow:
+    0 0 0 8px rgba(220, 226, 234, .10),
+    0 20px 48px rgba(0, 0, 0, .28);
+}
+
+.eyebrow {
+  color: #C7D5E8;
+  font-size: .82rem;
+  font-weight: 750;
+  letter-spacing: 2.3px;
+}
+
+.hero h1 {
+  color: #E2E7EF;
+  font-size: clamp(2.35rem, 4.3vw, 3.55rem);
+  line-height: 1.14;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .18);
+}
+
+.hero-role {
+  color: #FFFFFF;
+  font-size: 1.28rem;
+  line-height: 1.5;
+  font-weight: 650;
+  margin-top: 16px;
+}
+
+.hero-affiliation {
+  color: #D7E1EF;
+  font-size: 1.06rem;
+  margin-top: 6px;
+}
+
+.hero-summary {
+  max-width: 740px;
+  color: #E7EDF5;
+  font-size: 1.06rem;
+  line-height: 1.85;
+  margin-top: 22px;
+}
+
+.hero-actions {
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn {
+  padding: 13px 21px;
+  border-radius: 10px;
+  font-size: .96rem;
+  font-weight: 750;
+  letter-spacing: .01em;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+.btn-primary {
+  color: var(--royal-deep);
+  background: #E2E7EF;
+  border: 1px solid #E2E7EF;
+}
+
+.btn-primary:hover {
+  color: var(--royal-deep);
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  color: #FFFFFF;
+  border: 1px solid rgba(226, 231, 239, .75);
+  background: rgba(255, 255, 255, .055);
+}
+
+.btn-outline:hover {
+  color: #FFFFFF;
+  background: rgba(226, 231, 239, .14);
+  border-color: #E2E7EF;
+  transform: translateY(-3px);
+}
+
+.social-links {
+  gap: 21px;
+  margin-top: 27px;
+}
+
+.social-links a {
+  color: #E2E7EF;
+  font-size: 1.35rem;
+}
+
+.social-links a:hover {
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+/* Section headings */
+section.content-section {
+  padding: 78px 0;
+}
+
+.section-heading {
+  margin-bottom: 34px;
+}
+
+.section-kicker {
+  color: #5278AD;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: 1.9px;
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  display: inline-block;
+  color: var(--royal-deep);
+  font-size: clamp(1.95rem, 3.1vw, 2.4rem);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -.8px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 62px;
+  height: 4px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #174A91, #AEBBCB);
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.75;
+  margin-top: 12px;
+}
+
+/* Cards and panels */
+.panel {
+  background: rgba(255, 255, 255, .96);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about-panel {
+  padding: 33px 37px;
+  border-top: 4px solid #174A91;
+}
+
+.about-panel p {
+  color: #43536A;
+  font-size: 1.04rem;
+  line-height: 1.9;
+}
+
+.about-panel p + p {
+  margin-top: 16px;
+}
+
+.about-panel a {
+  color: #174A91;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #B8C7DA;
+  text-underline-offset: 3px;
+}
+
+.two-column {
+  gap: 26px;
+  margin-top: 28px;
+}
+
+.info-card,
+.teaching-card,
+.contact-card {
+  padding: 30px;
+  transition: transform .22s ease, box-shadow .22s ease,
+              border-color .22s ease;
+}
+
+.info-card:hover,
+.teaching-card:hover,
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: #B8C7DA;
+  box-shadow: 0 18px 38px rgba(16, 43, 89, .10);
+}
+
+.card-title {
+  color: var(--royal-deep);
+  font-size: 1.22rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.card-title i {
+  color: #416DA7;
+}
+
+.interest-list {
+  gap: 14px;
+}
+
+.interest-list li,
+.teaching-card li {
+  color: #45566D;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.interest-list i,
+.teaching-card li i {
+  color: #5278AD;
+}
+
+.education-item {
+  border-bottom: 1px solid #E5EAF0;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.education-item strong {
+  color: #263B59;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.education-item span {
+  color: var(--muted);
+  font-size: .97rem;
+  line-height: 1.65;
+}
+
+/* Academic experience timeline */
+.experience-list::before {
+  background: #C6D2E1;
+  width: 2px;
+}
+
+.experience-item {
+  padding-bottom: 30px;
+}
+
+.experience-item::before {
+  background: #174A91;
+  border: 3px solid #DCE5F0;
+  box-shadow: 0 0 0 3px #FFFFFF;
+}
+
+.experience-card {
+  padding: 25px 29px;
+  border-left: 4px solid #174A91;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 15px 34px rgba(16, 43, 89, .09);
+}
+
+.experience-top h3 {
+  color: var(--royal-deep);
+  font-size: 1.22rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.experience-place {
+  color: #66758A;
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-top: 5px;
+}
+
+.experience-date {
+  color: #17427E;
+  background: #EAF0F8;
+  border: 1px solid #D2DDEA;
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: .89rem;
+  font-weight: 750;
+}
+
+.experience-note {
+  color: #52627A;
+  font-size: .98rem;
+  line-height: 1.7;
+  margin-top: 11px;
+}
+
+/* Publications */
+.publication-group {
+  margin-top: 38px;
+}
+
+.publication-group h3 {
+  color: var(--royal-deep);
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 19px;
+  padding: 3px 0 3px 15px;
+  border-left: 4px solid #174A91;
+}
+
+.publication {
+  padding: 25px 28px;
+  margin-bottom: 16px;
+  background: #FFFFFF;
+  border: 1px solid #DCE3EC;
+  border-radius: 15px;
+  box-shadow: 0 5px 16px rgba(16, 43, 89, .035);
+  transition: transform .22s ease, box-shadow .22s ease,
+              border-color .22s ease;
+}
+
+.publication:hover {
+  transform: translateY(-4px);
+  border-color: #AEBFD5;
+  box-shadow: 0 15px 32px rgba(16, 43, 89, .09);
+}
+
+.publication h4 {
+  color: #203653;
+  font-size: 1.09rem;
+  font-weight: 750;
+  line-height: 1.62;
+}
+
+.authors {
+  color: #6B788B;
+  font-size: .96rem;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.publication-venue {
+  color: #435671;
+  font-size: .98rem;
+  line-height: 1.65;
+  margin-top: 8px;
+}
+
+.publication-meta {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
+  align-items: center;
+  gap: 9px;
+  margin-top: 13px;
 }
 
-.contact-left {
-  flex: 1;
-  min-width: 300px;
+.publication-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #EEF2F7;
+  color: #385575;
+  border: 1px solid #DCE4EE;
+  font-size: .88rem;
+  line-height: 1.5;
+  font-weight: 700;
 }
 
-.contact-title {
-  margin: 0;
-  font-size: 2rem;
+.publication-tag.quartile {
+  color: #17427E;
+  background: #E8EEF7;
+  border-color: #D0DCEC;
 }
 
-.space {
-  margin: 1.5rem 0;
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: #174A91;
+  font-size: .95rem;
+  font-weight: 750;
 }
 
-.contact-block {
-  margin-bottom: 1.5rem;
+.publication-link:hover {
+  color: #6384B0;
+}
+
+.scholar-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 13px;
+  padding: 11px 16px;
+  color: #174A91;
+  background: #FFFFFF;
+  border: 1px solid #C9D6E6;
+  border-radius: 10px;
+  font-size: .95rem;
+  font-weight: 750;
+  box-shadow: 0 4px 12px rgba(16, 43, 89, .045);
+}
+
+.scholar-link:hover {
+  color: #0B2550;
+  background: #EDF2F8;
+  border-color: #AEBFD5;
+}
+
+/* Teaching section */
+.teaching-grid {
+  gap: 26px;
+}
+
+.teaching-card ul {
+  gap: 14px;
+}
+
+/* Contact section */
+.contact-section {
+  background: linear-gradient(180deg, #E9EEF5 0%, #F2F5F9 100%);
+  border-top: 1px solid #DCE3EC;
+  border-bottom: 1px solid #DCE3EC;
 }
 
 .contact-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-align: left;
+  gap: 15px;
+  margin: 21px 0;
 }
-
 
 .contact-row i {
-  font-size: 1.2rem;
-  color: #00bfff;
+  color: #174A91;
+  font-size: 1.18rem;
 }
 
-.contact-row h4 {
-  margin: 0;
-  font-size: 1.1rem;
+.contact-row strong {
+  display: block;
+  color: #203653;
+  font-size: 1rem;
+  margin-bottom: 4px;
 }
 
-.contact-info {
-  margin: 0.5rem 0 0 1.8rem; /* indent under the icon */
-  line-height: 1.5;
+.contact-row span,
+.contact-row a {
+  color: #65748A;
+  font-size: .98rem;
+  line-height: 1.7;
 }
 
-.contact-info a {
-  color: #333;
+.map-frame {
+  min-height: 310px;
+  border: 1px solid #D5DFEA;
+  box-shadow: 0 5px 16px rgba(16, 43, 89, .06);
+}
+
+/* Creative Commons footer */
+.site-footer,
+footer {
+  background: linear-gradient(115deg, #091F45 0%, #123B78 100%);
+  color: #DCE2EA;
+  padding: 27px 0;
+  text-align: center;
+  font-size: .96rem;
+  border-top: 1px solid rgba(220, 226, 234, .24);
+}
+
+.site-footer .copyright {
+  color: #DCE2EA;
+  font-size: .96rem;
+  line-height: 1.75;
+  margin: 0 0 14px;
+}
+
+.site-footer .copyright a {
+  color: #FFFFFF;
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: #AEBBCB;
+  text-underline-offset: 3px;
+}
+
+.site-footer .copyright a:hover {
+  color: #BFD0E5;
+}
+
+.license-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.license-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  color: #DCE2EA;
   text-decoration: none;
 }
 
-.contact-info a:hover {
-  color: #00bfff;
+.license-icons i {
+  font-size: 23px;
+  transition: color .22s ease, transform .22s ease;
 }
 
-.map {
-  flex: 1;
-  min-width: 100px;
-}
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.license-icons a:hover i {
+  color: #FFFFFF;
+  transform: translateY(-2px);
 }
 
- .teaching-section {
- background-color: var(--light);
- color: var(--dark);
- }
+/* Subtle focus visibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #9CB6D8;
+  outline-offset: 4px;
+  border-radius: 5px;
+}
 
- .teaching-section .container {
- max-width: 800px;
- margin: 0 auto;
- text-align: left;
- }
+/* Responsive refinements */
+@media (max-width: 800px) {
+  .hero {
+    padding: 68px 0 62px;
+  }
 
- .section-title {
- font-size: 1.5rem;
- font-weight: 700;
- margin-bottom: 1rem;
- color: var(--accent); /* #3498db */
- border-bottom: 1px solid var(--border);
- padding-bottom: 0.3rem;
- }
+  .hero-grid {
+    gap: 36px;
+  }
 
- .teaching-list {
- list-style: none;
- margin: 0;
- font-size: 1rem;
- line-height: 1.6;
- color: var(--gray);
- }
+  section.content-section {
+    padding: 64px 0;
+  }
+}
 
- .teaching-list li {
- margin-bottom: 0.5rem;
- }
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 32px, 1160px);
+  }
 
- .course-title {
- font-weight: 600;
- color: var(--primary);
- }
-    
-  </style>
+  .nav {
+    min-height: 66px;
+  }
+
+  .brand {
+    font-size: .92rem;
+  }
+
+  .nav-links {
+    background: #0B2550;
+    border-bottom: 1px solid rgba(220, 226, 234, .2);
+  }
+
+  .nav-links a {
+    color: #DCE2EA;
+  }
+
+  .hero {
+    padding: 52px 0 48px;
+  }
+
+  .portrait {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+  }
+
+  .hero-role {
+    font-size: 1.12rem;
+  }
+
+  .hero-summary {
+    font-size: 1rem;
+  }
+
+  section.content-section {
+    padding: 52px 0;
+  }
+
+  .section-heading h2 {
+    font-size: 1.85rem;
+  }
+
+  .about-panel,
+  .info-card,
+  .contact-card,
+  .teaching-card {
+    padding: 22px;
+  }
+
+  .experience-card {
+    padding: 19px 20px;
+  }
+
+  .publication {
+    padding: 20px;
+  }
+
+  .publication h4 {
+    font-size: 1.02rem;
+  }
+
+  .publication-group h3 {
+    font-size: 1.25rem;
+  }
+
+  .site-footer,
+  footer {
+    padding: 23px 12px;
+    font-size: .88rem;
+  }
+
+  .site-footer .copyright {
+    font-size: .88rem;
+  }
+
+  .license-icons i {
+    font-size: 21px;
+  }
+}
+
+
+
+/* Compact vertical rhythm: reduce excessive gaps between sections */
+section.content-section {
+  padding-top: 58px;
+  padding-bottom: 58px;
+}
+
+.section-heading {
+  margin-bottom: 26px;
+}
+
+.publication-group {
+  margin-top: 28px;
+}
+
+.two-column,
+.teaching-grid {
+  gap: 20px;
+  margin-top: 22px;
+}
+
+.experience-item {
+  padding-bottom: 22px;
+}
+
+@media (max-width: 800px) {
+  section.content-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 650px) {
+  section.content-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-heading {
+    margin-bottom: 21px;
+  }
+
+  .publication-group {
+    margin-top: 23px;
+  }
+}
+.about-panel p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+</style>
 </head>
+
 <body>
- <!-- Header -->
- <header>
- <div class="container">
- <nav>
- <div class="nav-logo">Dr. Sakali Raghavendra Kumar</div>
- <ul class="nav-menu">
- <li><a href="#" class="active">Home</a></li>
- <li><a href="#publications">Publications</a></li>
- <li><a href="#teaching">Teaching</a></li>
- <li><a href="#contact">Contact</a></li>
- 
- </ul>
- </nav>
- </div>
- </header>
-
-  <!-- Profile Section -->
-  <section class="profile">
-    <div class="container">
-      <div class="profile">
-        <div class="profile-sidebar">
-          <div class="profile-pic">
-            <img src="./photo.jpeg" alt="Dr. SRK">
-          </div>
-          <div class="profile-title">
-            <h1>Dr. Sakali Raghavendra Kumar</h1>
-            <p>Assistant Professor</p>
-            <p>Department of Computer Science and Engineering</p>
-          </div>
-          <div class="profile-social">
-            <a href="mailto:raghavendrakumars@ssn.edu.in" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://scholar.google.com/citations?user=Ng_1Nk0AAAAJ&hl=en&oi=ao" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
-            <a href="https://www.linkedin.com/in/raghavendra-kumar-sakali-790422101/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" title="Resume"><i class="fa-solid fa-file-lines"></i></a>
-          </div>
-        </div>
-
-        <div class="profile-content">
-          <div class="profile-section">
-            <h2 class="section-title">Biography</h2>
-            <p class="bio-text">
-              I am currently a faculty member in the Department of Computer Science and Engineering at <a href="https://www.ssn.edu.in/staff-members/sakali-raghavendra-kumar-assistant-professor/">Sri Sivasubramaniya Nadar College of Engineering</a>.
-              My research interests include reliable and approximate adder and multiplier designs, as well as Machine Learning/Deep Learning accelerators using reconfigurable computing. I am also keen on designing customized hardware solutions using reconfigurable computing for specific applications. 
-            </p>
-            <p class="bio-text">
-              I received my Ph.D. from the 
-              <a href="https://www.iiitdm.ac.in/">Indian Institute of Information Technology, Design and Manufacturing (IIITDM)</a>, 
-              Kancheepuram, Chennai, where I was supervised by 
-              <a href="https://www.iiitdm.ac.in/people/faculty/noor@iiitdm.ac.in">Dr. Noor Mahammad Sk</a> 
-              (Associate Professor, IIITDM Kancheepuram) 
-            </p>
-            <p class="resume-btn">
-              <a href="https://raw.githubusercontent.com/raghavendrak29/SRK_Profle/main/Resume_v1.pdf" style="color: black;" download>Download Resume</a>
-            </p>
-          </div>
-
-          <div class="info-grid">
-            <div class="info-card">
-              <h3>Research Interests</h3>
-              <ul class="info-list">
-                <li><i class="fas fa-microchip"></i> Reconfigurable Computing</li>
-                <li><i class="fas fa-tools"></i> Reliable Adder and Multiplier</li>
-                <li><i class="fas fa-balance-scale"></i> Approximate Adder and Multiplier</li>
-                <li><i class="fas fa-brain"></i> AI Model Accelerators</li>
-              </ul>
-            </div>
-          
-            <div class="info-card">
-              <h3>Education</h3>
-              <div class="edu-item">
-                <div class="edu-title">PhD in CSE, 2021–2024</div>
-                <div class="edu-place">IIITDM Kancheepuram, Chennai</div>
-              </div>
-              <div class="edu-item">
-                <div class="edu-title">M. Tech in Computer Science, 2016–2018</div>
-                <div class="edu-place">JNTU, Anantapur</div>
-              </div>
-              <div class="edu-item">
-                <div class="edu-title">B. Tech in Information Technology, 2009–2013</div>
-                <div class="edu-place">G. Pullaiah College of Engineering and Technology, Kurnool </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Publications Section -->
-  <section id="publications" class="publications">
-    <br><br><br>
-    <div class="container">
-      <h2 class="section-title">Publications</h2>
-      
-      <div class="pub-group">
-        <h3>Journal Articles</h3>     
-        <!-- Publication 1 -->
-        <div class="pub-item">
-          <div class="pub-title">
-            <i class="fas fa-file-alt"></i>
-            Optimized Fault-Tolerant Adder Design Using Error Analysis
-          </div>
-          <div class="pub-authors">
-            Raghavendra Kumar Sakali, P. Balasubramanian, Ramesh Reddy, Sreehari Veeramachaneni, and Noor Mahammad Sk
-          </div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1142/S0218126623500913" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-          </div>
-        </div>
-
-        <!-- Publication 2 -->
-        <div class="pub-item">
-          <div class="pub-title">
-            <i class="fas fa-file-alt"></i>
-            Intrinsic Based Self- Healing Adder Design Using Chromosome Reconstruction Algorithm
-          </div>
-          <div class="pub-authors">
-            Sakali Raghavendra Kumar, Noor Mahammad Sk.
-          </div>
-          <div class="pub-links">
-            <a href="https://link.springer.com/article/10.1007/s10836-023-06050-1" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-          </div>
-        </div>
-
-        <!-- Publication 3 -->
-        <div class="pub-item">
-          <div class="pub-title">
-            <i class="fas fa-file-alt"></i>
-            Preferential Fault-Tolerance Multiplier Design to Mitigate Soft Errors in FPGAs
-          </div>
-          <div class="pub-authors">
-            Raghavendra Kumar Sakali, Sreehari Veeramachaneni, Noor Mahammad SK
-          </div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.vlsi.2023.102068" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-          </div>
-        </div>
-
-        <!-- Publication 4 -->
-        <div class="pub-item">
-          <div class="pub-title">
-            <i class="fas fa-file-alt"></i>
-            Fault-tolerant multiplier using self-healing technique
-          </div>
-          <div class="pub-authors">
-            Raghavendra Kumar Sakali, Noor Mahammad Sk
-          </div>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.microrel.2024.115458" class="pub-link">
-              <i class="fas fa-file-pdf"></i> PDF
-            </a>
-          </div>
-        </div>
-      </div>
-        <div class="pub-group">
-        <h3>Conference Articles</h3>
-          <!-- Conference Publication 1 -->
-          <div class="pub-item">
-            <div class="pub-title">
-              <i class="fas fa-file-alt"></i>
-              Novel Embryonic Adder Architecture with Uni-Cellular Self Check Unit
-            </div>
-            <div class="pub-authors">
-              Sakali Raghavendra Kumar, Noor Mahammad Sk, Balasubramanian P, G. Venkat Reddy
-            </div>
-            <div class="pub-links">
-              <a href="https://doi.org/10.2991/978-94-6463-252-1_93" class="pub-link" target="_blank">
-                <i class="fas fa-file-pdf"></i> PDF
-              </a>
-            </div>
-          </div>
-        
-          <!-- Conference Publication 2 -->
-          <div class="pub-item">
-            <div class="pub-title">
-              <i class="fas fa-file-alt"></i>
-              Fault-Tolerant Floating-Point Multiplier Design for Mission Critical Systems
-            </div>
-            <div class="pub-authors">
-              Sakali Raghavendra Kumar, Sreehari Veeramachaneni, Sk Noor Mahammad 
-            </div>
-            <div class="pub-links">
-              <a href="https://doi.org/10.1109/VLSID60093.2024.00120" class="pub-link" target="_blank">
-                <i class="fas fa-file-pdf"></i> PDF
-              </a>
-            </div>
-          </div>
-        
-          <!-- Conference Publication 3 -->
-          <div class="pub-item">
-            <div class="pub-title">
-              <i class="fas fa-file-alt"></i>
-              Fault Resilient Micro-Coded Control Unit for Space-Based Digital Systems
-            </div>
-            <div class="pub-authors">
-              S. Deepanjali, Noor Mahammad Sk and Sakali Raghavendra Kumar
-            </div>
-            <div class="pub-links">
-              <a href="https://doi.org/10.1109/VDAT63601.2024.10705726" class="pub-link" target="_blank">
-                <i class="fas fa-external-link-alt"></i> PDF
-              </a>
-            </div>
-          </div>
-
-
-           <!-- Conference Publication 4 -->
-           <div class="pub-item">
-            <div class="pub-title">
-              <i class="fas fa-file-alt"></i>
-              Preferential Fault-Tolerant Based TF32 Floating Point Adder for Mission Critical Systems
-            </div>
-            <div class="pub-authors">
-              S. Raghavendra Kumar and Sk. Noor Mahammad
-            </div>
-            <div class="pub-links">
-              <a href="https://doi.org/10.1109/ATS64447.2024.10915484" class="pub-link" target="_blank">
-                <i class="fas fa-external-link-alt"></i> PDF
-              </a>
-            </div>
-          </div>
-        </div>
-        
-    </div>
-    <section class="teaching" id="teaching">
-  <br><br><br>
-  <h2 class="section-title" style="margin-left: 45px;">Teaching</h2>
-
-  <div style="display: flex; justify-content: space-between; margin-left: 45px; margin-right: 45px;">
-    <!-- Theory Section -->
-    <div style="flex: 1; margin-right: 20px;">
-      <h2><u>Theory</u></h2>
-      <ol class="teaching-list">
-        <li><span class="course-title">Data Structures</span></li> 
-        <li><span class="course-title">Python Programming</span></li>
-        <li><span class="course-title">Computer Organization and Architecture</span></li> 
-        <li><span class="course-title">Internet Programming</span></li>
-        <li><span class="course-title">Digital Principles and System Design</span></li>
-      </ol>
-    </div>
-
-    <!-- Lab Section -->
-    <div style="flex: 1;">
-      <h2><u>Lab</u></h2>
-      <ul class="teaching-list">
-        <li><span class="course-title">Data Structures Lab</span></li>
-        <li><span class="course-title">Python Programming Lab</span></li>
-        <li><span class="course-title">Internet Programming Lab</span></li>
-        <li><span class="course-title">Digital Design Lab</span></li>
-        <li><span class="course-title">Digital Design Lab</span></li>
-        <li><span class="course-title">Fundamentals and Practice on Software Development</span></li>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">Dr. Sakali Raghavendra Kumar</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-  </div>
-</section>
+  </header>
 
-    </div>
-  </section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="contact-content">
-
-      <!-- Left: Title + Contact Info -->
-      <div class="contact-left">
-        <!-- Row 1 -->
-        <h2 class="contact-title">Get in Touch</h2>
-
-        <!-- Space -->
-        <div class="space"></div>
-
-        <!-- Row 2 + 3 -->
-        <div class="contact-block">
-          <div class="contact-row">
-            <i class="fas fa-envelope"></i>
-            <h4>Email</h4>
-          </div>
-          <p class="contact-info">
-            <a href="mailto:raghavendrakumars@ssn.edu.in">raghavendrakumars@ssn.edu.in</a>
-          </p>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="portrait-wrap">
+          <!-- Keep photo.jpeg in the same folder as this HTML file. -->
+          <img class="portrait" src="./photo.jpeg" alt="Portrait of Dr. Sakali Raghavendra Kumar">
         </div>
-
-        <!-- Space -->
-        <div class="space"></div>
-
-        <!-- Row 4 + 5 + 6 -->
-        <div class="contact-block">
-          <div class="contact-row">
-            <i class="fas fa-map-marker-alt"></i>
-            <h4>Address</h4>
+        <div>
+          <h1>Dr. Sakali Raghavendra Kumar</h1>
+          <p class="hero-role">Assistant Professor</p>
+          <p class="hero-affiliation">Department of Computer Science and Engineering </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://raw.githubusercontent.com/raghavendrak29/SRK_Profle/main/Resume_v1.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a class="btn btn-outline" href="#contact"><i class="fa-regular fa-envelope"></i> Contact Me</a>
           </div>
-          <p class="contact-info">
-            SSN College of Engineering,<br>
-            Kalavakkam, OMR, Chennai, India
-          </p>
+          <div class="social-links">
+            <a href="mailto:raghavendrakumars@snuchennai.edu.in" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=Ng_1Nk0AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            <a href="https://www.linkedin.com/in/raghavendra-kumar-sakali-790422101/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Right: Google Maps -->
-      <div class="map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.412168481091!2d80.20075717447003!3d12.751723587543818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52512f04729e11%3A0xbc4ea0ae50ca1aaa!2sSri%20Sivasubramaniya%20Nadar%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1746791856818!5m2!1sen!2sin" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <section class="content-section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About Me</h2>
         </div>
 
+        <div class="panel about-panel">
+    <p>
+        I am an Assistant Professor in the Department of Computer Science and Engineering
+        at <a href="https://www.snuchennai.edu.in/faculty/dr-sakali-raghavendra-kumar/" target="_blank" rel="noopener">SSN School of Engineering, Shiv Nadar University Chennai</a>.
+        My research interests include fault-tolerant and approximate adder and multiplier designs, as well as machine learning and deep learning accelerators using reconfigurable computing. I am also interested in developing customized hardware
+        solutions for application-specific requirements.
+    </p>
 
-    </div>
-  </div>
-</section>
+    <p>
+        I received my Ph.D. from the
+        <a href="https://www.iiitdm.ac.in/" target="_blank" rel="noopener">Indian Institute of Information Technology,
+        Design and Manufacturing (IIITDM), Kancheepuram</a>, Chennai, under the supervision of
+        <a href="https://www.iiitdm.ac.in/people/faculty/noor@iiitdm.ac.in" target="_blank" rel="noopener">Dr. Noor Mahammad SK</a>.
+        My doctoral research focused on
+        <em>“Fault-Tolerant Adder and Multiplier Designs for Mission Critical Systems.”</em>
+    </p>
+</div>
 
-  <!-- Footer -->
-  <footer>
+        <div class="two-column">
+          <div class="panel info-card">
+            <h3 class="card-title"><i class="fa-solid fa-microchip"></i> Research Interests</h3>
+            <ul class="interest-list">
+              <li><i class="fa-solid fa-check"></i><span>Reconfigurable Computing and FPGA-based Systems</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Fault-Tolerant and Reliable Arithmetic Circuits</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Approximate Adders and Multipliers</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Machine Learning and Deep Learning Accelerators</span></li>
+              <li><i class="fa-solid fa-check"></i><span>Hardware Acceleration for Image and Video Processing</span></li>
+            </ul>
+          </div>
+
+          <div class="panel info-card">
+            <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="education-item">
+              <strong>Ph.D. in Computer Science and Engineering, 2021–2024</strong>
+              <span>IIITDM Kancheepuram, Chennai</span>
+            </div>
+            <div class="education-item">
+              <strong>M.Tech. in Computer Science, 2016–2018</strong>
+              <span>JNTU, Anantapur</span>
+            </div>
+            <div class="education-item">
+              <strong>B.Tech. in Information Technology, 2009–2013</strong>
+              <span>G. Pullaiah College of Engineering and Technology, Kurnool</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Academic Experience</h2>
+        </div>
+
+        <div class="experience-list">
+          <div class="experience-item">
+            <article class="panel experience-card">
+              <div class="experience-top">
+                <div>
+                  <h3>Assistant Professor</h3>
+                  <p class="experience-place">Shiv Nadar University Chennai, Tamil Nadu</p>
+                </div>
+                <span class="experience-date">July 2026 – Present</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="experience-item">
+            <article class="panel experience-card">
+              <div class="experience-top">
+                <div>
+                  <h3>Assistant Professor</h3>
+                  <p class="experience-place">Sri Sivasubramaniya Nadar College of Engineering, Chennai, Tamil Nadu</p>
+                </div>
+                <span class="experience-date">Aug 2023 – Jun 2026</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="experience-item">
+            <article class="panel experience-card">
+              <div class="experience-top">
+                <div>
+                  <h3>Assistant Professor</h3>
+                  <p class="experience-place">SVR Engineering College, JNTUA, Nandyal, Andhra Pradesh</p>
+                </div>
+                <span class="experience-date">Jul 2019 – Dec 2020</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="experience-item">
+            <article class="panel experience-card">
+              <div class="experience-top">
+                <div>
+                  <h3>Assistant Professor</h3>
+                  <p class="experience-place">BIT Institute of Technology, JNTUA, Hindupur, Andhra Pradesh</p>
+                </div>
+                <span class="experience-date">Jul 2018 – Jul 2019</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Publications</h2><br/>
+          <a class="scholar-link" href="https://scholar.google.com/citations?hl=en&amp;user=8SVnUbwAAAAJ" target="_blank" rel="noopener">
+            <i class="fa-solid fa-graduation-cap"></i> View publication list on Google Scholar
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="publication-group">
+          <h3>Journal Articles</h3>
+
+          <article class="publication">
+            <h4>An Unsupervised Stereoscopic Image Quality Prediction Model Using Perceptual and Statistical Features of Scene Attributes</h4>
+            <p class="authors">Pankaj Kumar Raghuwanshi, Ajay Kumar Reddy Poreddy, Sakali Raghavendra Kumar, and Balasubramanyam Appina</p>
+            <p class="publication-venue"><em>IEEE Transactions on Instrumentation and Measurement</em></p>
+            <div class="publication-meta">
+              <span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2025</span>
+              <span class="publication-tag quartile">SCImago SJR: Q1</span>
+            </div>
+            <a class="publication-link" href="https://doi.org/10.1109/TIM.2025.3619656" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+          <article class="publication">
+            <h4>Fault-Tolerant Multiplier Using Self-Healing Technique</h4>
+            <p class="authors">Raghavendra Kumar Sakali and Noor Mahammad SK</p>
+            <p class="publication-venue"><em>Microelectronics Reliability</em>, Volume 160, Article 115458</p>
+            <div class="publication-meta">
+              <span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2024</span>
+              <span class="publication-tag quartile">SCImago SJR: Q2</span>
+            </div>
+            <a class="publication-link" href="https://doi.org/10.1016/j.microrel.2024.115458" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+          
+           <article class="publication">
+            <h4>Preferential Fault-Tolerance Multiplier Design to Mitigate Soft Errors in FPGAs</h4>
+            <p class="authors">Raghavendra Kumar Sakali, Sreehari Veeramachaneni, and Noor Mahammad SK</p>
+            <p class="publication-venue"><em>Integration</em>, Volume 93, Article 102068</p>
+            <div class="publication-meta">
+              <span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2023</span>
+              <span class="publication-tag quartile">SCImago SJR: Q2 </span>
+            </div>
+            <a class="publication-link" href="https://doi.org/10.1016/j.vlsi.2023.102068" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+
+          <article class="publication">
+            <h4>Intrinsic Based Self-Healing Adder Design Using Chromosome Reconstruction Algorithm</h4>
+            <p class="authors">Sakali Raghavendra Kumar and Noor Mahammad SK</p>
+            <p class="publication-venue"><em>Journal of Electronic Testing</em>, Volume 39, Issue 1, pp. 111–122</p>
+            <div class="publication-meta">
+              <span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2023</span>
+              <span class="publication-tag quartile">SCImago SJR: Q3 </span>
+            </div>
+            <a class="publication-link" href="https://doi.org/10.1007/s10836-023-06050-1" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+         
+          <article class="publication">
+            <h4>Optimized Fault-Tolerant Adder Design Using Error Analysis</h4>
+            <p class="authors">Raghavendra Kumar Sakali, P. Balasubramanian, Ramesh Reddy, Sreehari Veeramachaneni, and Noor Mahammad SK</p>
+            <p class="publication-venue"><em>Journal of Circuits, Systems and Computers</em>, Volume 32, Issue 6, Article 2350091</p>
+            <div class="publication-meta">
+              <span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2023 <span style="font-weight:500">(online first: 2022)</span></span>
+              <span class="publication-tag quartile">SCImago SJR: Q3 </span>
+            </div>
+            <a class="publication-link" href="https://doi.org/10.1142/S0218126623500913" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+        </div>
+
+        <div class="publication-group">
+          <h3>Conference Articles</h3>
+
+          <article class="publication">
+            <h4>Fault-Tolerant Floating-Point Multiplier Design for Mission Critical Systems</h4>
+            <p class="authors">Sakali Raghavendra Kumar, Sreehari Veeramachaneni, and SK Noor Mahammad</p>
+            <p class="publication-venue"><em>37th International Conference on VLSI Design (VLSID) and 23rd International Conference on Embedded Systems</em>, Kolkata, India</p>
+            <div class="publication-meta"><span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2024</span><span class="publication-tag">IEEE Conference Proceedings</span></div>
+            <a class="publication-link" href="https://doi.org/10.1109/VLSID60093.2024.00120" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+          <article class="publication">
+            <h4>Fault Resilient Micro-Coded Control Unit for Space-Based Digital Systems</h4>
+            <p class="authors">S. Deepanjali, Noor Mahammad SK, and Sakali Raghavendra Kumar</p>
+            <p class="publication-venue"><em>28th International Symposium on VLSI Design and Test (VDAT)</em>, Vellore, India, pp. 1–6</p>
+            <div class="publication-meta"><span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2024</span><span class="publication-tag">IEEE Conference Proceedings</span></div>
+            <a class="publication-link" href="https://doi.org/10.1109/VDAT63601.2024.10705726" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+          <article class="publication">
+            <h4>Preferential Fault-Tolerant Based TF32 Floating Point Adder for Mission Critical Systems</h4>
+            <p class="authors">S. Raghavendra Kumar and SK Noor Mahammad</p>
+            <p class="publication-venue"><em>33rd IEEE Asian Test Symposium (ATS)</em>, Ahmedabad, India</p>
+            <div class="publication-meta"><span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2024</span><span class="publication-tag">IEEE Conference Proceedings</span></div>
+            <a class="publication-link" href="https://doi.org/10.1109/ATS64447.2024.10915484" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+
+          <article class="publication">
+            <h4>Novel Embryonic Adder Architecture with Uni-Cellular Self Check Unit</h4>
+            <p class="authors">Sakali Raghavendra Kumar, Noor Mahammad SK, P. Balasubramanian, and G. Venkat Reddy</p>
+            <p class="publication-venue"><em>2nd International Conference on Emerging Trends in Engineering</em>, Atlantis Press</p>
+            <div class="publication-meta"><span class="publication-tag"><i class="fa-regular fa-calendar"></i> 2023</span><span class="publication-tag"> Atlantis Press Conference Proceedings</span></div>
+            <a class="publication-link" href="https://doi.org/10.2991/978-94-6463-252-1_93" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> View publication</a>
+          </article>
+        </div>
+
+       </div>
+    </section>
+
+    <section class="content-section" id="teaching">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Teaching</h2>
+          <p>Courses handled in theory and laboratory sessions.</p>
+        </div>
+        <div class="teaching-grid">
+          <div class="panel teaching-card">
+            <h3 class="card-title"><i class="fa-solid fa-chalkboard-user"></i> Theory Courses</h3>
+            <ul>
+              <li><i class="fa-solid fa-sitemap"></i> Data Structures</li>
+              <li><i class="fa-solid fa-python"></i> Python Programming</li>
+              <li><i class="fa-solid fa-microchip"></i> Computer Organization and Architecture</li>
+              <li><i class="fa-solid fa-globe"></i> Internet Programming</li>
+              <li><i class="fa-solid fa-microchip"></i> Digital Principles and System Design</li>
+              <li><i class="fa-solid fa-cubes"></i>Object Oriented Programming in Java</li>
+            </ul>
+          </div>
+          <div class="panel teaching-card">
+            <h3 class="card-title"><i class="fa-solid fa-laptop-code"></i> Laboratory Courses</h3>
+            <ul>
+              <li><i class="fa-solid fa-sitemap"></i> Data Structures Lab</li>
+              <li><i class="fa-solid fa-python"></i> Python Programming Lab</li>
+              <li><i class="fa-solid fa-globe"></i> Internet Programming Lab</li>
+              <li><i class="fa-solid fa-microchip"></i> Digital Design Lab</li>
+              <li><i class="fa-solid fa-laptop-code "></i> Fundamentals and Practice on Software Development</li>
+              <li><i class="fa-solid fa-cubes"></i> Object Oriented Programming Lab</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Get in Touch</div>
+          <h2>Contact</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="panel contact-card">
+            <div class="contact-row">
+              <i class="fa-solid fa-envelope"></i>
+              <div><strong>Email</strong><a href="mailto:raghavendrakumars@snuchennai.edu.in">raghavendrakumars@snuchennai.edu.in</a></div>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <div><strong>Address</strong><span>Shiv Nadar University Chennai, Kalavakkam, Tamil Nadu, India</span></div>
+            </div>
+          </div>
+          <div class="panel contact-card">
+            <iframe class="map-frame"
+              src="https://www.google.com/maps?q=Shiv%20Nadar%20University%20Chennai&output=embed"
+              title="Map showing Shiv Nadar University Chennai"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  
+<footer class="site-footer">
     <div class="container">
-      <p>© 2025 Dr. Sakali Raghavendra Kumar. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY NC ND 4.0</a></p>
-      <div class="footer-links">
-        <i class="fab fa-creative-commons"></i>
-        <i class="fab fa-creative-commons-by"></i>
-        <i class="fab fa-creative-commons-nc"></i>
-        <i class="fab fa-creative-commons-nd"></i>
-      </div>
+
+        <p class="copyright">
+            © 2026 Dr. Sakali Raghavendra Kumar.
+            This work is licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+               target="_blank"
+               rel="license noopener noreferrer">
+                CC BY-NC-ND 4.0 International
+            </a>.
+        </p>
+
+        <div class="license-icons">
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+               target="_blank"
+               rel="license noopener noreferrer"
+               aria-label="Creative Commons Attribution NonCommercial NoDerivatives 4.0">
+
+                <i class="fa-brands fa-creative-commons"
+                   title="Creative Commons"></i>
+
+                <i class="fa-brands fa-creative-commons-by"
+                   title="Attribution"></i>
+
+                <i class="fa-brands fa-creative-commons-nc"
+                   title="NonCommercial"></i>
+
+                <i class="fa-brands fa-creative-commons-nd"
+                   title="NoDerivatives"></i>
+
+            </a>
+        </div>
+
     </div>
-  </footer>
+</footer>
+
+
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+  </script>
 </body>
 </html>
+
+
